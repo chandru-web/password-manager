@@ -1,0 +1,103 @@
+/* Colors for initials */
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+.black {
+  background-color: black;
+}
+.yellow {
+  background-color: yellow;
+}
+
+/* Styling for each password list item */
+.password-list-item {
+  list-style-type: none;
+  height: auto;
+  width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #2e3b4e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.password-list-item:hover {
+  background-color: #3a4a63;
+}
+
+/* Initial circle for website name */
+.initial {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.stars {
+  width: 80%;
+}
+/* Password details container */
+.password-details {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+/* Text styles */
+.website-name,
+.username,
+.password {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+/* Delete button styling */
+.delete-button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+}
+
+.delete-icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .password-list-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .password-details {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
